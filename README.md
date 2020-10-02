@@ -4,7 +4,7 @@
 ![Screenshot from the game](Screenshot_game.jpeg)
 
 Hi , this is a basic mobile platformer game that I made with godot engine. <br />
-It has all the basic elements of a platformer game. <br />
+It has all the basic elements of a platformer game to get you started. <br />
 You can import it in godot engine and add your further changes as per your vision.
 
 * I have only made one level so that you can add as many as you want according to you.
