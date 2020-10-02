@@ -1,4 +1,5 @@
-# mini_game_ninja
+# Little ninja game
+## Simple mobile platformer game made with Godot engine
 
 ![Screenshot from the game](Screenshot_game.jpeg)
 
