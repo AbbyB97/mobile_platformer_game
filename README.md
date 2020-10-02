@@ -1,5 +1,7 @@
 # mini_game_ninja
 
+![](Screenshot_game.jpeg)
+
 Hi , this is a basic mobile platformer game that I made with godot engine.
 It has all the basic elements of a platformer game you can import it in godot engine and add your further changes as per your vision.
 
