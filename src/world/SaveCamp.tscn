@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/assets/world/objects/save_board.png" type="Texture" id=1]
+[ext_resource path="res://src/world/SaveCamp.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 22.473, 23.2435 )
+
+[node name="SaveCamp" type="Area2D"]
+scale = Vector2( 1.80037, 1.80037 )
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -23.7841 )
+shape = SubResource( 1 )
+
+[node name="save_board" type="Sprite" parent="."]
+position = Vector2( 0, -19.052 )
+scale = Vector2( 0.343892, 0.343892 )
+texture = ExtResource( 1 )
+[connection signal="body_entered" from="." to="." method="_on_SaveCamp_body_entered"]

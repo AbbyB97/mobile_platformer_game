@@ -1,0 +1,19 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://src/menus/JoystickButton.gd" type="Script" id=1]
+[ext_resource path="res://src/assets/player_buttons/joystick/unclicked.svg" type="Texture" id=2]
+[ext_resource path="res://src/assets/player_buttons/joystick/transparent_frame_white.svg" type="Texture" id=3]
+[ext_resource path="res://src/assets/player_buttons/joystick/clicked.svg" type="Texture" id=4]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 30.0
+
+[node name="Joystick" type="Sprite"]
+texture = ExtResource( 3 )
+
+[node name="JoystickButton" type="TouchScreenButton" parent="."]
+position = Vector2( -30, -29 )
+normal = ExtResource( 2 )
+pressed = ExtResource( 4 )
+shape = SubResource( 1 )
+script = ExtResource( 1 )

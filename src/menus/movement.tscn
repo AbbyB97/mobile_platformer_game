@@ -1,0 +1,101 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://src/assets/player_buttons/joystick/dark_white/dark_white_glide.svg" type="Texture" id=1]
+[ext_resource path="res://src/assets/player_buttons/joystick/dark_white/dark_white_kunai.svg" type="Texture" id=2]
+[ext_resource path="res://src/assets/player_buttons/joystick/dark_white/dark_white_slide.svg" type="Texture" id=3]
+[ext_resource path="res://src/assets/player_buttons/joystick/dark_white/dark_white_sword.svg" type="Texture" id=4]
+[ext_resource path="res://src/assets/player_buttons/joystick/dark_white/dark_white_jump.svg" type="Texture" id=5]
+[ext_resource path="res://src/menus/game_theme.tres" type="Theme" id=6]
+[ext_resource path="res://src/menus/Joystick.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/menus/movement.gd" type="Script" id=8]
+
+[node name="movement" type="Node2D"]
+script = ExtResource( 8 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/Control"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -128.0
+margin_top = 24.0
+margin_right = -16.0
+margin_bottom = 136.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="glide" type="TouchScreenButton" parent="CanvasLayer/Control/GridContainer"]
+position = Vector2( 7.00006, 6 )
+scale = Vector2( 0.8, 0.8 )
+normal = ExtResource( 1 )
+action = "glide"
+
+[node name="HBoxContainer" type="ViewportContainer" parent="CanvasLayer/Control"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = -266.0
+margin_right = 295.0
+margin_bottom = -49.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Joystick" parent="CanvasLayer/Control/HBoxContainer" instance=ExtResource( 7 )]
+position = Vector2( 120, 104 )
+
+[node name="Container" type="GridContainer" parent="CanvasLayer/Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -332.0
+margin_top = -306.0
+margin_right = -36.0
+margin_bottom = -34.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="jump" type="TouchScreenButton" parent="CanvasLayer/Control/Container"]
+position = Vector2( 118, 4.99994 )
+scale = Vector2( 0.72, 0.72 )
+normal = ExtResource( 5 )
+action = "jump"
+
+[node name="melee" type="TouchScreenButton" parent="CanvasLayer/Control/Container"]
+position = Vector2( 209, 94 )
+scale = Vector2( 0.65, 0.7 )
+normal = ExtResource( 4 )
+action = "melee_attack"
+
+[node name="ranged" type="TouchScreenButton" parent="CanvasLayer/Control/Container"]
+position = Vector2( -7.99994, 89 )
+scale = Vector2( 0.7, 0.7 )
+normal = ExtResource( 2 )
+action = "ranged_attack"
+
+[node name="slide" type="TouchScreenButton" parent="CanvasLayer/Control/Container"]
+position = Vector2( 112, 185 )
+scale = Vector2( 0.65, 0.65 )
+normal = ExtResource( 3 )
+action = "slide"
+
+[node name="Label" type="Label" parent="CanvasLayer/Control"]
+margin_left = 48.0
+margin_top = 32.0
+margin_right = 88.0
+margin_bottom = 46.0
+theme = ExtResource( 6 )
+text = "Health Points : "
+__meta__ = {
+"_edit_use_anchors_": false
+}

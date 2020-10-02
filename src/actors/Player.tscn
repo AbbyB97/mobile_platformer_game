@@ -1,0 +1,267 @@
+[gd_scene load_steps=118 format=2]
+
+[ext_resource path="res://src/assets/characters/player/Idle__001.png" type="Texture" id=1]
+[ext_resource path="res://src/assets/characters/player/Idle__006.png" type="Texture" id=2]
+[ext_resource path="res://src/assets/characters/player/Idle__005.png" type="Texture" id=3]
+[ext_resource path="res://src/assets/characters/player/Idle__004.png" type="Texture" id=4]
+[ext_resource path="res://src/assets/characters/player/Idle__003.png" type="Texture" id=5]
+[ext_resource path="res://src/assets/characters/player/Idle__000.png" type="Texture" id=6]
+[ext_resource path="res://src/assets/characters/player/Idle__002.png" type="Texture" id=7]
+[ext_resource path="res://src/assets/characters/player/Idle__007.png" type="Texture" id=8]
+[ext_resource path="res://src/assets/characters/player/Idle__009.png" type="Texture" id=9]
+[ext_resource path="res://src/assets/characters/player/Idle__008.png" type="Texture" id=10]
+[ext_resource path="res://src/actors/Player.gd" type="Script" id=11]
+[ext_resource path="res://src/assets/characters/player/Run__006.png" type="Texture" id=12]
+[ext_resource path="res://src/assets/characters/player/Run__003.png" type="Texture" id=13]
+[ext_resource path="res://src/assets/characters/player/Run__004.png" type="Texture" id=14]
+[ext_resource path="res://src/assets/characters/player/Run__002.png" type="Texture" id=15]
+[ext_resource path="res://src/assets/characters/player/Run__001.png" type="Texture" id=16]
+[ext_resource path="res://src/assets/characters/player/Run__007.png" type="Texture" id=17]
+[ext_resource path="res://src/assets/characters/player/Run__005.png" type="Texture" id=18]
+[ext_resource path="res://src/assets/characters/player/Run__008.png" type="Texture" id=19]
+[ext_resource path="res://src/assets/characters/player/Run__009.png" type="Texture" id=20]
+[ext_resource path="res://src/assets/characters/player/Jump__007.png" type="Texture" id=21]
+[ext_resource path="res://src/assets/characters/player/Jump__000.png" type="Texture" id=22]
+[ext_resource path="res://src/assets/characters/player/Jump__001.png" type="Texture" id=23]
+[ext_resource path="res://src/assets/characters/player/Jump__009.png" type="Texture" id=24]
+[ext_resource path="res://src/assets/characters/player/Jump__004.png" type="Texture" id=25]
+[ext_resource path="res://src/assets/characters/player/Jump__003.png" type="Texture" id=26]
+[ext_resource path="res://src/assets/characters/player/Jump__008.png" type="Texture" id=27]
+[ext_resource path="res://src/assets/characters/player/Jump__006.png" type="Texture" id=28]
+[ext_resource path="res://src/assets/characters/player/Jump__005.png" type="Texture" id=29]
+[ext_resource path="res://src/assets/characters/player/Jump__002.png" type="Texture" id=30]
+[ext_resource path="res://src/assets/characters/player/Glide_003.png" type="Texture" id=31]
+[ext_resource path="res://src/assets/characters/player/Slide__001.png" type="Texture" id=32]
+[ext_resource path="res://src/assets/characters/player/Attack__001.png" type="Texture" id=33]
+[ext_resource path="res://src/assets/characters/player/Throw__001.png" type="Texture" id=34]
+[ext_resource path="res://src/assets/characters/player/Slide__006.png" type="Texture" id=35]
+[ext_resource path="res://src/assets/characters/player/Glide_004.png" type="Texture" id=36]
+[ext_resource path="res://src/assets/characters/player/Jump_Attack__002.png" type="Texture" id=37]
+[ext_resource path="res://src/assets/characters/player/Glide_001.png" type="Texture" id=38]
+[ext_resource path="res://src/assets/characters/player/Climb_000.png" type="Texture" id=39]
+[ext_resource path="res://src/assets/characters/player/Dead__001.png" type="Texture" id=40]
+[ext_resource path="res://src/assets/characters/player/Climb_006.png" type="Texture" id=41]
+[ext_resource path="res://src/assets/characters/player/Climb_003.png" type="Texture" id=42]
+[ext_resource path="res://src/assets/characters/player/Jump_Throw__005.png" type="Texture" id=43]
+[ext_resource path="res://src/assets/characters/player/Dead__007.png" type="Texture" id=44]
+[ext_resource path="res://src/assets/characters/player/Dead__009.png" type="Texture" id=45]
+[ext_resource path="res://src/assets/characters/player/Climb_002.png" type="Texture" id=46]
+[ext_resource path="res://src/assets/characters/player/Glide_006.png" type="Texture" id=47]
+[ext_resource path="res://src/assets/characters/player/Climb_004.png" type="Texture" id=48]
+[ext_resource path="res://src/assets/characters/player/Attack__005.png" type="Texture" id=49]
+[ext_resource path="res://src/assets/characters/player/Climb_005.png" type="Texture" id=50]
+[ext_resource path="res://src/assets/characters/player/Dead__008.png" type="Texture" id=51]
+[ext_resource path="res://src/assets/characters/player/Climb_008.png" type="Texture" id=52]
+[ext_resource path="res://src/assets/characters/player/Climb_009.png" type="Texture" id=53]
+[ext_resource path="res://src/assets/characters/player/Jump_Attack__006.png" type="Texture" id=54]
+[ext_resource path="res://src/assets/characters/player/Jump_Attack__007.png" type="Texture" id=55]
+[ext_resource path="res://src/assets/characters/player/Jump_Attack__009.png" type="Texture" id=56]
+[ext_resource path="res://src/assets/characters/player/Jump_Attack__008.png" type="Texture" id=57]
+[ext_resource path="res://src/assets/characters/player/Jump_Throw__006.png" type="Texture" id=58]
+[ext_resource path="res://src/assets/characters/player/Slide__009.png" type="Texture" id=59]
+[ext_resource path="res://src/assets/characters/player/Jump_Throw__002.png" type="Texture" id=60]
+[ext_resource path="res://src/assets/characters/player/Jump_Attack__005.png" type="Texture" id=61]
+[ext_resource path="res://src/assets/characters/player/Dead__003.png" type="Texture" id=62]
+[ext_resource path="res://src/assets/characters/player/Slide__003.png" type="Texture" id=63]
+[ext_resource path="res://src/assets/characters/player/Glide_000.png" type="Texture" id=64]
+[ext_resource path="res://src/assets/characters/player/Slide__002.png" type="Texture" id=65]
+[ext_resource path="res://src/assets/characters/player/Jump_Attack__004.png" type="Texture" id=66]
+[ext_resource path="res://src/assets/characters/player/Slide__005.png" type="Texture" id=67]
+[ext_resource path="res://src/assets/characters/player/Throw__006.png" type="Texture" id=68]
+[ext_resource path="res://src/assets/characters/player/Attack__004.png" type="Texture" id=69]
+[ext_resource path="res://src/assets/characters/player/Attack__003.png" type="Texture" id=70]
+[ext_resource path="res://src/assets/characters/player/Attack__002.png" type="Texture" id=71]
+[ext_resource path="res://src/assets/characters/player/Throw__003.png" type="Texture" id=72]
+[ext_resource path="res://src/assets/characters/player/Jump_Throw__001.png" type="Texture" id=73]
+[ext_resource path="res://src/assets/characters/player/Attack__009.png" type="Texture" id=74]
+[ext_resource path="res://src/assets/characters/player/Throw__008.png" type="Texture" id=75]
+[ext_resource path="res://src/assets/characters/player/Throw__009.png" type="Texture" id=76]
+[ext_resource path="res://src/assets/characters/player/Throw__000.png" type="Texture" id=77]
+[ext_resource path="res://src/assets/characters/player/Jump_Throw__000.png" type="Texture" id=78]
+[ext_resource path="res://src/assets/characters/player/Jump_Throw__003.png" type="Texture" id=79]
+[ext_resource path="res://src/assets/characters/player/Jump_Throw__004.png" type="Texture" id=80]
+[ext_resource path="res://src/assets/characters/player/Throw__005.png" type="Texture" id=81]
+[ext_resource path="res://src/assets/characters/player/Glide_008.png" type="Texture" id=82]
+[ext_resource path="res://src/assets/characters/player/Glide_007.png" type="Texture" id=83]
+[ext_resource path="res://src/assets/characters/player/Glide_009.png" type="Texture" id=84]
+[ext_resource path="res://src/assets/characters/player/Climb_001.png" type="Texture" id=85]
+[ext_resource path="res://src/assets/characters/player/Climb_007.png" type="Texture" id=86]
+[ext_resource path="res://src/assets/characters/player/Dead__002.png" type="Texture" id=87]
+[ext_resource path="res://src/assets/characters/player/Attack__007.png" type="Texture" id=88]
+[ext_resource path="res://src/assets/characters/player/Attack__006.png" type="Texture" id=89]
+[ext_resource path="res://src/assets/characters/player/Throw__007.png" type="Texture" id=90]
+[ext_resource path="res://src/assets/characters/player/Attack__008.png" type="Texture" id=91]
+[ext_resource path="res://src/assets/characters/player/Glide_005.png" type="Texture" id=92]
+[ext_resource path="res://src/assets/characters/player/Jump_Throw__007.png" type="Texture" id=93]
+[ext_resource path="res://src/assets/characters/player/Jump_Throw__008.png" type="Texture" id=94]
+[ext_resource path="res://src/assets/characters/player/Jump_Throw__009.png" type="Texture" id=95]
+[ext_resource path="res://src/assets/characters/player/Throw__004.png" type="Texture" id=96]
+[ext_resource path="res://src/assets/characters/player/Jump_Attack__003.png" type="Texture" id=97]
+[ext_resource path="res://src/assets/characters/player/Slide__007.png" type="Texture" id=98]
+[ext_resource path="res://src/assets/characters/player/Slide__008.png" type="Texture" id=99]
+[ext_resource path="res://src/assets/characters/player/Throw__002.png" type="Texture" id=100]
+[ext_resource path="res://src/assets/characters/player/Jump_Attack__001.png" type="Texture" id=101]
+[ext_resource path="res://src/assets/characters/player/Jump_Attack__000.png" type="Texture" id=102]
+[ext_resource path="res://src/assets/characters/player/Attack__000.png" type="Texture" id=103]
+[ext_resource path="res://src/assets/characters/player/Slide__004.png" type="Texture" id=104]
+[ext_resource path="res://src/assets/characters/player/Glide_002.png" type="Texture" id=105]
+[ext_resource path="res://src/assets/characters/player/Slide__000.png" type="Texture" id=106]
+[ext_resource path="res://src/assets/characters/player/Dead__006.png" type="Texture" id=107]
+[ext_resource path="res://src/assets/characters/player/Dead__005.png" type="Texture" id=108]
+[ext_resource path="res://src/assets/characters/player/Dead__004.png" type="Texture" id=109]
+[ext_resource path="res://src/assets/characters/player/Run__000.png" type="Texture" id=110]
+[ext_resource path="res://src/assets/characters/player/Dead__000.png" type="Texture" id=111]
+[ext_resource path="res://src/actors/Camera2D.gd" type="Script" id=112]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 106 ), ExtResource( 32 ), ExtResource( 65 ), ExtResource( 63 ), ExtResource( 104 ), ExtResource( 67 ), ExtResource( 35 ), ExtResource( 98 ), ExtResource( 99 ), ExtResource( 59 ) ],
+"loop": true,
+"name": "slide",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 1 ), ExtResource( 7 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 8 ), ExtResource( 10 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "idle",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 111 ), ExtResource( 40 ), ExtResource( 87 ), ExtResource( 62 ), ExtResource( 109 ), ExtResource( 108 ), ExtResource( 107 ), ExtResource( 44 ), ExtResource( 51 ), ExtResource( 45 ) ],
+"loop": true,
+"name": "dead",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 78 ), ExtResource( 73 ), ExtResource( 60 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 43 ), ExtResource( 58 ), ExtResource( 93 ), ExtResource( 94 ), ExtResource( 95 ) ],
+"loop": true,
+"name": "jump_ranged_attack",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 39 ), ExtResource( 85 ), ExtResource( 46 ), ExtResource( 42 ), ExtResource( 48 ), ExtResource( 50 ), ExtResource( 41 ), ExtResource( 86 ), ExtResource( 52 ), ExtResource( 53 ) ],
+"loop": true,
+"name": "climb",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 110 ), ExtResource( 16 ), ExtResource( 15 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 18 ), ExtResource( 12 ), ExtResource( 17 ), ExtResource( 19 ), ExtResource( 20 ) ],
+"loop": true,
+"name": "run",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 102 ), ExtResource( 101 ), ExtResource( 37 ), ExtResource( 97 ), ExtResource( 66 ), ExtResource( 61 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 57 ), ExtResource( 56 ) ],
+"loop": true,
+"name": "jump_attack",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 111 ) ],
+"loop": true,
+"name": "hurt",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 77 ), ExtResource( 34 ), ExtResource( 100 ), ExtResource( 72 ), ExtResource( 96 ), ExtResource( 81 ), ExtResource( 68 ), ExtResource( 90 ), ExtResource( 75 ), ExtResource( 76 ) ],
+"loop": true,
+"name": "ranged_attack",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 22 ), ExtResource( 23 ), ExtResource( 30 ), ExtResource( 26 ), ExtResource( 25 ), ExtResource( 29 ), ExtResource( 28 ), ExtResource( 21 ), ExtResource( 27 ), ExtResource( 24 ) ],
+"loop": true,
+"name": "jump",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 64 ), ExtResource( 38 ), ExtResource( 105 ), ExtResource( 31 ), ExtResource( 36 ), ExtResource( 92 ), ExtResource( 47 ), ExtResource( 83 ), ExtResource( 82 ), ExtResource( 84 ) ],
+"loop": true,
+"name": "glide",
+"speed": 18.0
+}, {
+"frames": [ ExtResource( 103 ), ExtResource( 33 ), ExtResource( 71 ), ExtResource( 70 ), ExtResource( 69 ), ExtResource( 49 ), ExtResource( 89 ), ExtResource( 88 ), ExtResource( 91 ), ExtResource( 74 ) ],
+"loop": true,
+"name": "melee_attack",
+"speed": 25.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 89.5315, 175.77 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 89.5315, 150.242 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 78.3402, 182.794 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 89.5315, 37.3047 )
+
+[node name="Player" type="KinematicBody2D"]
+position = Vector2( 0, -55 )
+scale = Vector2( 0.268062, 0.268062 )
+collision_mask = 14
+script = ExtResource( 11 )
+speed = Vector2( 500, 1200 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.935722, 0.935722 )
+frames = SubResource( 1 )
+animation = "idle"
+frame = 2
+playing = true
+offset = Vector2( 0, 10 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 26.5227 )
+shape = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 1223.6, -18.6524 )
+current = true
+smoothing_enabled = true
+drag_margin_top = 0.75
+editor_draw_drag_margin = true
+script = ExtResource( 112 )
+
+[node name="ShiftTween" type="Tween" parent="Camera2D"]
+
+[node name="PlayerMidArea" type="Area2D" parent="."]
+position = Vector2( 0, 22.6133 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerMidArea"]
+modulate = Color( 0.196078, 0.172549, 0.172549, 1 )
+position = Vector2( 0, 4.523 )
+shape = SubResource( 3 )
+
+[node name="MeleeRangeL" type="Area2D" parent="." groups=[
+"player_attack",
+]]
+position = Vector2( 179.063, 22.3829 )
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MeleeRangeL" groups=[
+"player_attack",
+]]
+position = Vector2( -1.52588e-05, 0 )
+shape = SubResource( 4 )
+disabled = true
+
+[node name="MeleeRangeR" type="Area2D" parent="." groups=[
+"player_attack",
+]]
+position = Vector2( -179.063, 22.3829 )
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MeleeRangeR" groups=[
+"player_attack",
+]]
+position = Vector2( -1.52588e-05, 0 )
+shape = SubResource( 4 )
+disabled = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+modulate = Color( 0.980392, 0.964706, 0.964706, 1 )
+self_modulate = Color( 0.145098, 0.776471, 0.215686, 1 )
+position = Vector2( 0, 167.871 )
+shape = SubResource( 5 )
+disabled = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[connection signal="grounded_updated" from="." to="Camera2D" method="_on_Player_grounded_updated"]
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
+[connection signal="frame_changed" from="AnimatedSprite" to="." method="_on_AnimatedSprite_frame_changed"]
+[connection signal="area_entered" from="PlayerMidArea" to="." method="_on_PlayerMidArea_area_entered"]
+[connection signal="area_exited" from="PlayerMidArea" to="." method="_on_PlayerMidArea_area_exited"]
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_AudioStreamPlayer_finished"]

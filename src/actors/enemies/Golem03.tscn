@@ -1,0 +1,221 @@
+[gd_scene load_steps=95 format=2]
+
+[ext_resource path="res://src/actors/enemies/Golem01.gd" type="Script" id=1]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Hurt/Golem_03_Hurt_001.png" type="Texture" id=2]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Dying/Golem_03_Dying_000.png" type="Texture" id=3]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Taunt/Golem_03_Taunt_004.png" type="Texture" id=4]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Dying/Golem_03_Dying_012.png" type="Texture" id=5]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Walking/Golem_03_Walking_017.png" type="Texture" id=6]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Walking/Golem_03_Walking_007.png" type="Texture" id=7]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Attacking/Golem_03_Attacking_001.png" type="Texture" id=8]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Attacking/Golem_03_Attacking_004.png" type="Texture" id=9]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Attacking/Golem_03_Attacking_008.png" type="Texture" id=10]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Attacking/Golem_03_Attacking_010.png" type="Texture" id=11]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Attacking/Golem_03_Attacking_009.png" type="Texture" id=12]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Walking/Golem_03_Walking_008.png" type="Texture" id=13]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Dying/Golem_03_Dying_009.png" type="Texture" id=14]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Dying/Golem_03_Dying_002.png" type="Texture" id=15]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Dying/Golem_03_Dying_005.png" type="Texture" id=16]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Dying/Golem_03_Dying_003.png" type="Texture" id=17]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Dying/Golem_03_Dying_013.png" type="Texture" id=18]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Dying/Golem_03_Dying_010.png" type="Texture" id=19]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Dying/Golem_03_Dying_011.png" type="Texture" id=20]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Walking/Golem_03_Walking_005.png" type="Texture" id=21]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Walking/Golem_03_Walking_006.png" type="Texture" id=22]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Walking/Golem_03_Walking_009.png" type="Texture" id=23]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Walking/Golem_03_Walking_011.png" type="Texture" id=24]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Walking/Golem_03_Walking_013.png" type="Texture" id=25]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Walking/Golem_03_Walking_012.png" type="Texture" id=26]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Walking/Golem_03_Walking_010.png" type="Texture" id=27]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Walking/Golem_03_Walking_014.png" type="Texture" id=28]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Walking/Golem_03_Walking_015.png" type="Texture" id=29]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Walking/Golem_03_Walking_016.png" type="Texture" id=30]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Walking/Golem_03_Walking_002.png" type="Texture" id=31]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Walking/Golem_03_Walking_003.png" type="Texture" id=32]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Walking/Golem_03_Walking_004.png" type="Texture" id=33]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Taunt/Golem_03_Taunt_007.png" type="Texture" id=34]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Taunt/Golem_03_Taunt_006.png" type="Texture" id=35]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Taunt/Golem_03_Taunt_010.png" type="Texture" id=36]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Taunt/Golem_03_Taunt_008.png" type="Texture" id=37]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Taunt/Golem_03_Taunt_017.png" type="Texture" id=38]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Taunt/Golem_03_Taunt_013.png" type="Texture" id=39]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Taunt/Golem_03_Taunt_012.png" type="Texture" id=40]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Taunt/Golem_03_Taunt_015.png" type="Texture" id=41]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Taunt/Golem_03_Taunt_016.png" type="Texture" id=42]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Walking/Golem_03_Walking_001.png" type="Texture" id=43]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Taunt/Golem_03_Taunt_011.png" type="Texture" id=44]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Taunt/Golem_03_Taunt_009.png" type="Texture" id=45]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Hurt/Golem_03_Hurt_003.png" type="Texture" id=46]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Hurt/Golem_03_Hurt_000.png" type="Texture" id=47]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Idle/Golem_03_Idle_002.png" type="Texture" id=48]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Idle/Golem_03_Idle_004.png" type="Texture" id=49]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Hurt/Golem_03_Hurt_009.png" type="Texture" id=50]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Hurt/Golem_03_Hurt_011.png" type="Texture" id=51]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Taunt/Golem_03_Taunt_000.png" type="Texture" id=52]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Idle/Golem_03_Idle_005.png" type="Texture" id=53]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Hurt/Golem_03_Hurt_002.png" type="Texture" id=54]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Idle/Golem_03_Idle_000.png" type="Texture" id=55]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Idle/Golem_03_Idle_003.png" type="Texture" id=56]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Taunt/Golem_03_Taunt_005.png" type="Texture" id=57]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Idle/Golem_03_Idle_001.png" type="Texture" id=58]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Hurt/Golem_03_Hurt_004.png" type="Texture" id=59]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Walking/Golem_03_Walking_000.png" type="Texture" id=60]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Dying/Golem_03_Dying_007.png" type="Texture" id=61]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Dying/Golem_03_Dying_001.png" type="Texture" id=62]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Attacking/Golem_03_Attacking_003.png" type="Texture" id=63]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Dying/Golem_03_Dying_006.png" type="Texture" id=64]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Dying/Golem_03_Dying_014.png" type="Texture" id=65]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Dying/Golem_03_Dying_008.png" type="Texture" id=66]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Attacking/Golem_03_Attacking_000.png" type="Texture" id=67]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Attacking/Golem_03_Attacking_002.png" type="Texture" id=68]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Attacking/Golem_03_Attacking_007.png" type="Texture" id=69]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Attacking/Golem_03_Attacking_005.png" type="Texture" id=70]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Attacking/Golem_03_Attacking_006.png" type="Texture" id=71]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Hurt/Golem_03_Hurt_008.png" type="Texture" id=72]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Hurt/Golem_03_Hurt_007.png" type="Texture" id=73]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Hurt/Golem_03_Hurt_010.png" type="Texture" id=74]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Dying/Golem_03_Dying_004.png" type="Texture" id=75]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Attacking/Golem_03_Attacking_011.png" type="Texture" id=76]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Taunt/Golem_03_Taunt_001.png" type="Texture" id=77]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Taunt/Golem_03_Taunt_002.png" type="Texture" id=78]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Taunt/Golem_03_Taunt_003.png" type="Texture" id=79]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Hurt/Golem_03_Hurt_005.png" type="Texture" id=80]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Hurt/Golem_03_Hurt_006.png" type="Texture" id=81]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Idle/Golem_03_Idle_007.png" type="Texture" id=82]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Idle/Golem_03_Idle_006.png" type="Texture" id=83]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Idle/Golem_03_Idle_009.png" type="Texture" id=84]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Idle/Golem_03_Idle_008.png" type="Texture" id=85]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Idle/Golem_03_Idle_011.png" type="Texture" id=86]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Idle/Golem_03_Idle_010.png" type="Texture" id=87]
+[ext_resource path="res://src/assets/characters/enemies/Golem_03/PNG Sequences/Taunt/Golem_03_Taunt_014.png" type="Texture" id=88]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 55 ), ExtResource( 58 ), ExtResource( 48 ), ExtResource( 56 ), ExtResource( 49 ), ExtResource( 53 ), ExtResource( 83 ), ExtResource( 82 ), ExtResource( 85 ), ExtResource( 84 ), ExtResource( 87 ), ExtResource( 86 ) ],
+"loop": true,
+"name": "idle",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 60 ), ExtResource( 43 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 7 ), ExtResource( 13 ), ExtResource( 23 ), ExtResource( 27 ), ExtResource( 24 ), ExtResource( 26 ), ExtResource( 25 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "walking",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 67 ), ExtResource( 8 ), ExtResource( 68 ), ExtResource( 63 ), ExtResource( 9 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 69 ), ExtResource( 10 ), ExtResource( 12 ), ExtResource( 11 ), ExtResource( 76 ) ],
+"loop": true,
+"name": "attack",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 52 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 4 ), ExtResource( 57 ), ExtResource( 35 ), ExtResource( 34 ), ExtResource( 37 ), ExtResource( 45 ), ExtResource( 36 ), ExtResource( 44 ), ExtResource( 40 ), ExtResource( 39 ), ExtResource( 88 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 38 ) ],
+"loop": true,
+"name": "taunt",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 62 ), ExtResource( 15 ), ExtResource( 17 ), ExtResource( 75 ), ExtResource( 16 ), ExtResource( 64 ), ExtResource( 61 ), ExtResource( 66 ), ExtResource( 14 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 5 ), ExtResource( 18 ), ExtResource( 65 ) ],
+"loop": true,
+"name": "dying",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 47 ), ExtResource( 2 ), ExtResource( 54 ), ExtResource( 46 ), ExtResource( 59 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 73 ), ExtResource( 72 ), ExtResource( 50 ), ExtResource( 74 ), ExtResource( 51 ) ],
+"loop": true,
+"name": "hurt",
+"speed": 15.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 40, 68 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 40, 69.7134 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 32, 65 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 444.86, 92.2867 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 32, 67 )
+
+[node name="Golem01" type="KinematicBody2D"]
+scale = Vector2( 1.83428, 1.83428 )
+collision_layer = 2
+collision_mask = 2147483657
+script = ExtResource( 1 )
+speed = Vector2( 150, 1000 )
+health_points = 8
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -82 )
+scale = Vector2( 0.3875, 0.3875 )
+frames = SubResource( 1 )
+animation = "taunt"
+frame = 6
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -68 )
+shape = SubResource( 2 )
+
+[node name="Golem01MidArea_Enemy" type="Area2D" parent="."]
+position = Vector2( 0, -71.5483 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Golem01MidArea_Enemy"]
+modulate = Color( 0.0627451, 0.976471, 0.0352941, 1 )
+shape = SubResource( 3 )
+
+[node name="MeleeRangeR" type="Area2D" parent="."]
+position = Vector2( 72, -69 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MeleeRangeR"]
+self_modulate = Color( 0.117647, 0.0705882, 0.945098, 1 )
+shape = SubResource( 4 )
+
+[node name="MeleeRangeL" type="Area2D" parent="."]
+position = Vector2( -72, -69 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MeleeRangeL"]
+self_modulate = Color( 0.117647, 0.0705882, 0.945098, 1 )
+shape = SubResource( 4 )
+
+[node name="PlayerDetect" type="Area2D" parent="."]
+position = Vector2( 0, -80 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetect"]
+modulate = Color( 0.156863, 0.192157, 0.337255, 1 )
+position = Vector2( 0, 24 )
+shape = SubResource( 5 )
+
+[node name="EnemyAttack" type="Area2D" parent="."]
+position = Vector2( 72, -69 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyAttack"]
+shape = SubResource( 6 )
+disabled = true
+
+[node name="EnemyAttack2" type="Area2D" parent="."]
+position = Vector2( -72, -69 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyAttack2"]
+shape = SubResource( 6 )
+disabled = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+area_mask = 11
+
+[node name="VisibilityEnabler2D" type="VisibilityEnabler2D" parent="."]
+position = Vector2( 2.18069, 0.545172 )
+scale = Vector2( 1.49014, 1 )
+rect = Rect2( -300, -150, 600, 200 )
+process_parent = true
+physics_process_parent = true
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
+[connection signal="area_entered" from="Golem01MidArea_Enemy" to="." method="_on_Golem01MidArea_area_entered"]
+[connection signal="area_exited" from="Golem01MidArea_Enemy" to="." method="_on_Golem01MidArea_Enemy_area_exited"]
+[connection signal="body_entered" from="MeleeRangeR" to="." method="_on_MeleeRangeL_body_entered"]
+[connection signal="body_exited" from="MeleeRangeR" to="." method="_on_MeleeRangeL_body_exited"]
+[connection signal="body_entered" from="MeleeRangeL" to="." method="_on_MeleeRangeL_body_entered"]
+[connection signal="body_exited" from="MeleeRangeL" to="." method="_on_MeleeRangeL_body_exited"]
+[connection signal="body_entered" from="PlayerDetect" to="." method="_on_PlayerDetect_body_entered"]
+[connection signal="body_exited" from="PlayerDetect" to="." method="_on_PlayerDetect_body_exited"]
+[connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_AudioStreamPlayer2D_finished"]
